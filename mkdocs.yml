@@ -1,4 +1,4 @@
-site_name: SMDDC 2.0 IIOT Project Documentation
+site_name: TIEI IIOT Project Documentation
 theme:
   logo: images/cmti_logo_full_white_no_border.png
   name: material
@@ -9,7 +9,9 @@ nav:
     - Project Overview: index.md
     - User Interface: user_interfaces.md
     - Technical Stack: Technical Stack.md
-    - Codes & Services Location: Code & Services Locations.md
+    - Codes & Services Location:
+      - TNGA Plant: Code & Services Location/TNGA Plant.md
+      - GD Plant: Code & Services Location/GD Plant.md
     - Code Explanation:
       - Collector Services: Code Explanation/Collector.md
       - Back End Services: Code Explanation/Back End.md
@@ -29,8 +31,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.arithmatex:
       generic: true
