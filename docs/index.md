@@ -63,7 +63,7 @@ The Manufacturing Data Management (MDM) system is designed to streamline and enh
 
 
 
-### Analytics
+### User Management
     
 1. Register new users with specific roles (Admin, Maintenance, User).
 1. Ensure secure user management with restrictions on deleting the admin user.
@@ -97,7 +97,7 @@ The Manufacturing Data Management (MDM) system is designed to streamline and enh
 
 ### Alarm Monitoring
 - **Detailed Alarm Table**: List of alarms for selected machines over a chosen time period.
-- **Pareto and Pie Charts**: Visualization of alarm counts and timespans.
+- **Parito and Pie Charts**: Visualization of alarm counts and timespans.
 
 ### Spare Part Management
 - **Detailed Spare Part Information**: Comprehensive details for each machine's spare parts.
@@ -105,7 +105,6 @@ The Manufacturing Data Management (MDM) system is designed to streamline and enh
 
 ### Special Purpose Machines (SPM) Management
 - **Real-Time Parameter Monitoring**: Manage and monitor SPM machine parameters with real-time data.
-- **Position-Based Queries**: Specific tools for analyzing laser cladding processes.
 
 ### Analytics
 - **Machine Analytics**: Track and analyze machine abnormalities over time.
@@ -115,17 +114,3 @@ The Manufacturing Data Management (MDM) system is designed to streamline and enh
 ### User Management
 - **User Registration and Roles**: Add new users with defined roles and permissions.
 - **Secure User Management**: Ensure secure handling of user data and restrict deletion of critical admin accounts.
-
-## Future Scope
-
-1. **Integration with Other Systems**
-   - Integrate the MDM system with other enterprise systems such as ERP and MES for seamless data flow and enhanced functionality.
-
-2. **Advanced Predictive Analytics**
-   - Implement machine learning algorithms to predict potential machine failures and maintenance needs, improving proactive maintenance strategies.
-
-3. **Mobile Application Development**
-   - Develop a mobile application to provide maintenance personnel with on-the-go access to machine states, alarms, and spare part management.
-
-
-By addressing these future developments, the MDM system will continue to evolve, providing even greater value and efficiency to Toyota's maintenance operations.
