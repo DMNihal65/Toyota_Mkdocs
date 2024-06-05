@@ -1,0 +1,1382 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="user_interfaces/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>TIEI IIOT Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-overview-manufacturing-data-management-for-toyota-maintenance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="TIEI IIOT Project Documentation" class="md-header__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
+      
+  <img src="images/cmti_logo_full_white_no_border.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TIEI IIOT Project Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="TIEI IIOT Project Documentation" class="md-nav__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
+      
+  <img src="images/cmti_logo_full_white_no_border.png" alt="logo">
+
+    </a>
+    TIEI IIOT Project Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Project Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Project Overview
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-state-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine State Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-data-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Data Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alarm-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alarm Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spare-part-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spare Part Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-purpose-machines-spm-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Purpose Machines (SPM) Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Functional Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nature-of-the-current-system-at-tiei" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nature of the Current System at TIEI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nature of the Current System at TIEI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups-tnga-plant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter Groups - TNGA Plant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups-gd-plant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter Groups - GD Plant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine-state-monitoring_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine State Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-data-visualization_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Data Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alarm-monitoring_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alarm Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spare-part-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spare Part Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-purpose-machines-spm-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Purpose Machines (SPM) Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user_interfaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Technical%20Stack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Technical Stack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Codes & Services Location
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Codes & Services Location
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Code%20%26%20Services%20Location/TNGA%20Plant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TNGA Plant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Code%20%26%20Services%20Location/GD%20Plant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GD Plant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code Explanation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Code Explanation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Code%20Explanation/Collector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collector Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Code%20Explanation/Back%20End/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Back End Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Troubleshoot_Faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting & FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-state-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine State Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-data-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Data Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alarm-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alarm Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spare-part-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spare Part Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-purpose-machines-spm-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Purpose Machines (SPM) Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Functional Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nature-of-the-current-system-at-tiei" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nature of the Current System at TIEI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nature of the Current System at TIEI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups-tnga-plant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter Groups - TNGA Plant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups-gd-plant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter Groups - GD Plant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine-state-monitoring_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine State Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-data-visualization_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Data Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alarm-monitoring_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alarm Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spare-part-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spare Part Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-purpose-machines-spm-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Purpose Machines (SPM) Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="project-overview-manufacturing-data-management-for-toyota-maintenance">Project Overview: Manufacturing Data Management for Toyota Maintenance</h1>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>The Manufacturing Data Management (MDM) system is designed to streamline and enhance the maintenance operations for Toyota's two plants: TNGA and GD. This software solution provides comprehensive tools for monitoring, analyzing, and managing the state of various machines, spare parts, and production lines within these plants. By offering real-time data visualization, alarm monitoring, spare part management, and detailed analytics, the MDM system aims to improve operational efficiency, reduce downtime, and facilitate proactive maintenance.</p>
+<h2 id="project-requirements"><strong>Project Requirements</strong></h2>
+<h3 id="functional-requirements"><strong>Functional Requirements</strong></h3>
+<h3 id="machine-state-monitoring">Machine State Monitoring</h3>
+<ol>
+<li>
+<p>Display the current states of machines, axes, production lines, and parameter groups.</p>
+</li>
+<li>
+<p>Provide real-time visualization of machine parameters.</p>
+</li>
+<li>
+<p>Highlight critical, warning, and normal states with color-coded indicators.</p>
+</li>
+</ol>
+<h3 id="real-time-data-visualization">Real-Time Data Visualization</h3>
+<ol>
+<li>
+<p>Show real-time graphs for both static and dynamic parameters.</p>
+</li>
+<li>
+<p>Allow users to query data for specific time ranges and parameters.</p>
+</li>
+<li>
+<p>Provide tools to set and adjust warning and critical limits for parameters.</p>
+</li>
+</ol>
+<h3 id="alarm-monitoring">Alarm Monitoring</h3>
+<ol>
+<li>
+<p>Maintain a table of alarms for selected machines over specified time ranges.</p>
+</li>
+<li>
+<p>Generate Pareto charts for alarm counts and timespans.</p>
+</li>
+<li>
+<p>Provide pie charts to visualize alarm timespans.</p>
+</li>
+</ol>
+<h3 id="spare-part-management">Spare Part Management</h3>
+<ol>
+<li>
+<p>Display machine-specific spare part details, including part counts and limits.</p>
+</li>
+<li>
+<p>Allow users to add, delete, and reset spare parts.</p>
+</li>
+<li>
+<p>Enable setting warning and critical limits for spare parts.</p>
+</li>
+</ol>
+<h3 id="special-purpose-machines-spm-management">Special Purpose Machines (SPM) Management</h3>
+<ol>
+<li>
+<p>Manage SPM machine details and parameter states.</p>
+</li>
+<li>
+<p>Display real-time graphs for static and dynamic parameters.</p>
+</li>
+<li>
+<p>Allow position-based queries for laser cladding processes.</p>
+</li>
+</ol>
+<h3 id="analytics">Analytics</h3>
+<ol>
+<li>Provide machine analytics to track abnormalities over time.</li>
+<li>Offer maintenance analytics to monitor operator-managed abnormalities.</li>
+<li>Enable parameter analytics to evaluate specific machine parameters.</li>
+</ol>
+<h3 id="user-management">User Management</h3>
+<ol>
+<li>Register new users with specific roles (Admin, Maintenance, User).</li>
+<li>Ensure secure user management with restrictions on deleting the admin user.</li>
+</ol>
+<h3 id="non-functional-requirements"><strong>Non-Functional Requirements</strong></h3>
+<ol>
+<li><strong>Scalability</strong></li>
+<li>
+<p>The system should handle increasing amounts of data and users without performance degradation.</p>
+</li>
+<li>
+<p><strong>Reliability</strong></p>
+</li>
+<li>
+<p>Ensure high availability and minimal downtime, especially during critical operations.</p>
+</li>
+<li>
+<p><strong>Usability</strong></p>
+</li>
+<li>
+<p>Design an intuitive and user-friendly interface to facilitate ease of use and reduce training time.</p>
+</li>
+<li>
+<p><strong>Security</strong></p>
+</li>
+<li>Implement robust security measures to protect sensitive data and ensure user authentication and authorization.</li>
+</ol>
+<h2 id="nature-of-the-current-system-at-tiei"><strong>Nature of the Current System at TIEI</strong></h2>
+<p>The nature of the current system at TIEI is as follows:</p>
+<h3 id="machine">Machine</h3>
+<p>The following table gives the summary of available machines at TIEI-TNGA Plant:</p>
+<table>
+<thead>
+<tr>
+<th>S.NO</th>
+<th>Machines</th>
+<th>Number Of Machines</th>
+<th>Controller</th>
+<th>Communication Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>General Purpose CNC machines</td>
+<td>59</td>
+<td>Fanuc</td>
+<td>MtLinki Mongodb</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Laser Cladding</td>
+<td>1</td>
+<td>Nil</td>
+<td>Log Files</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Journal Grinding</td>
+<td>3</td>
+<td>Toypuc</td>
+<td>Log Files</td>
+</tr>
+</tbody>
+</table>
+<p>The following table gives the summary of available machines at TIEI-GD Plant:</p>
+<table>
+<thead>
+<tr>
+<th>S.NO</th>
+<th>Machines</th>
+<th>Number Of Machines</th>
+<th>Controller</th>
+<th>Communication Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>General Purpose CNC machines</td>
+<td>86</td>
+<td>Fanuc</td>
+<td>MtLinki Mongodb</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-parameters">Machine Parameters</h3>
+<p>The machine parameters in the TNGA Plant (for the 59 general purpose CNC machines) are split into 17 groups of two types.
+And the machine parameters in the GD Plant (for the 59 general purpose CNC machines) are split into 19 groups of two types:</p>
+<p><strong>Static Parameters</strong> - These parameters have a single value as their critical limits. For example, the warning limit of encoder temperature could be 50 degrees Celsius, and the critical limit could be 60 degrees Celsius. If any static parameter goes beyond these limits, it is said to be in an abnormal state.</p>
+<p><strong>Dynamic Parameters</strong> - These parameters have a set of values (also known as reference signals). If any new set of values (for a new machining cycle) is not similar to the reference signal, it will be considered to be in an abnormal state.</p>
+<p>The group of parameters are shown in the tables below.</p>
+<h3 id="parameter-groups-tnga-plant"><strong>Parameter Groups - TNGA Plant</strong></h3>
+<table>
+<thead>
+<tr>
+<th>S.No</th>
+<th>Parameter Group</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>APC Battery</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CNC Battery</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Servo and Spindle Motor Temperature</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Encoder Temperature</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Spindle and Servo Motor Insulation Resistance</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CNC Fan Speeds</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Internal Fan 1 Power Supply - Spindle Motor &amp; Spindle Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Internal Fan 1 Servo Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Internal Fan 1 Power Supply - Servo Motor</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Internal Fan 2 Power Supply - Spindle Motor &amp; Spindle Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Internal Fan 2 Servo Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Internal Fan 2 Power Supply - Servo Motor</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Battery Zero Separate Detector</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Battery Zero Serial Separate Detector</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Radiator Fan 1 - Servo &amp; Spindle Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Radiator Fan 2 - Servo &amp; Spindle Amplifier</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Servo &amp; Spindle Motor Load</td>
+<td>Dynamic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-groups-gd-plant"><strong>Parameter Groups - GD Plant</strong></h3>
+<p>In addition to the above mentioned parameters, the following parameters were also added for monitoring in the GD Plant.</p>
+<table>
+<thead>
+<tr>
+<th>S.No</th>
+<th>Parameter Group</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CNC Error Position</td>
+<td>Dynamic</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Servo &amp; Spindle Motor Speed</td>
+<td>Dynamic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="project-features">Project Features</h2>
+<h3 id="machine-state-monitoring_1">Machine State Monitoring</h3>
+<ul>
+<li><strong>Comprehensive Status Display</strong>: Real-time status of machines, axes, production lines, and parameter groups.</li>
+<li><strong>Color-Coded Indicators</strong>: Visual alerts for critical, warning, and normal states.</li>
+</ul>
+<h3 id="real-time-data-visualization_1">Real-Time Data Visualization</h3>
+<ul>
+<li><strong>Dynamic Graphs</strong>: Real-time graphs for both static and dynamic parameters.</li>
+<li><strong>Custom Queries</strong>: Users can set specific time ranges and parameters for detailed analysis.</li>
+</ul>
+<h3 id="alarm-monitoring_1">Alarm Monitoring</h3>
+<ul>
+<li><strong>Detailed Alarm Table</strong>: List of alarms for selected machines over a chosen time period.</li>
+<li><strong>Parito and Pie Charts</strong>: Visualization of alarm counts and timespans.</li>
+</ul>
+<h3 id="spare-part-management_1">Spare Part Management</h3>
+<ul>
+<li><strong>Detailed Spare Part Information</strong>: Comprehensive details for each machine's spare parts.</li>
+<li><strong>Limit Setting and Management</strong>: Tools to add, delete, and reset spare parts, with configurable warning and critical limits.</li>
+</ul>
+<h3 id="special-purpose-machines-spm-management_1">Special Purpose Machines (SPM) Management</h3>
+<ul>
+<li><strong>Real-Time Parameter Monitoring</strong>: Manage and monitor SPM machine parameters with real-time data.</li>
+</ul>
+<h3 id="analytics_1">Analytics</h3>
+<ul>
+<li><strong>Machine Analytics</strong>: Track and analyze machine abnormalities over time.</li>
+<li><strong>Maintenance Analytics</strong>: Monitor abnormalities managed by different operators.</li>
+<li><strong>Parameter Analytics</strong>: Evaluate and analyze specific machine parameters.</li>
+</ul>
+<h3 id="user-management_1">User Management</h3>
+<ul>
+<li><strong>User Registration and Roles</strong>: Add new users with defined roles and permissions.</li>
+<li><strong>Secure User Management</strong>: Ensure secure handling of user data and restrict deletion of critical admin accounts.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      For the Love of Manufacturing ❤️
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
