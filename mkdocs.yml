@@ -15,24 +15,16 @@ nav:
     - Code Explanation:
       - Collector Services: Code Explanation/Collector.md
       - Back End Services: Code Explanation/Back End.md
-    - General Knowledge:
-      - Opc Ua: General Knowledge/OPC UA.md
-      - KPIs in Manufacturing: General Knowledge/KPI in Manufacturing.md
-      - Focas: General Knowledge/Focas.md
-      - Manufacturing Management: General Knowledge/Manufacturing Management.md
-    - Project Knowledge:
-      - Machines: Project Knowledge/Machines.md
-      - KPIs Calculations: Project Knowledge/KPI Calculations.md
-      - KPIs Calculations (CMTI): Project Knowledge/KPI Calculations (CMTI).md
+   
     - Troubleshooting & FAQ: Troubleshoot_Faq.md
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.arithmatex:
       generic: true
