@@ -1,999 +1,478 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      
-        <link rel="next" href="user_interfaces/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
-    
-    
-      
-        <title>TIEI IIOT Project Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
-      
-        
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#project-overview-manufacturing-data-management-for-toyota-maintenance" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.6" name="generator"/>
+<title>TIEI IIOT Project Documentation</title>
+<link href="assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<meta content="#009485" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#project-overview-manufacturing-data-management-for-toyota-maintenance">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="TIEI IIOT Project Documentation" class="md-header__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
-      
-  <img src="images/cmti_logo_full_white_no_border.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="TIEI IIOT Project Documentation" class="md-header__button md-logo" data-md-component="logo" href="." title="TIEI IIOT Project Documentation">
+<img alt="logo" src="images/cmti_logo_full_white_no_border.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             TIEI IIOT Project Documentation
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Project Overview
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-    
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-  </nav>
-  
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="." title="TIEI IIOT Project Documentation" class="md-nav__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
-      
-  <img src="images/cmti_logo_full_white_no_border.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="TIEI IIOT Project Documentation" class="md-nav__button md-logo" data-md-component="logo" href="." title="TIEI IIOT Project Documentation">
+<img alt="logo" src="images/cmti_logo_full_white_no_border.png"/>
+</a>
     TIEI IIOT Project Documentation
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Project Overview
-  </span>
-  
-
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Project Overview
           <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href=".">
+        Project Overview
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-requirements">
+    Project Requirements
+  </a>
+<nav aria-label="Project Requirements" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functional-requirements">
+    Functional Requirements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-monitoring">
+    Machine State Monitoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-data-visualization">
+    Real-Time Data Visualization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring">
+    Alarm Monitoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management">
+    Spare Part Management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-purpose-machines-spm-management">
+    Special Purpose Machines (SPM) Management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics">
+    Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management">
+    User Management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-functional-requirements">
+    Non-Functional Requirements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nature-of-the-current-system-at-tiei">
+    Nature of the Current System at TIEI
+  </a>
+<nav aria-label="Nature of the Current System at TIEI" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine">
+    Machine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-parameters">
+    Machine Parameters
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-groups-tnga-plant">
+    Parameter Groups - TNGA Plant
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-groups-gd-plant">
+    Parameter Groups - GD Plant
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-features">
+    Project Features
+  </a>
+<nav aria-label="Project Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-monitoring_1">
+    Machine State Monitoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-data-visualization_1">
+    Real-Time Data Visualization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring_1">
+    Alarm Monitoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management_1">
+    Spare Part Management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-purpose-machines-spm-management_1">
+    Special Purpose Machines (SPM) Management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics_1">
+    Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management_1">
+    User Management
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="user_interfaces/">
+        User Interface
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Technical%20Stack/">
+        Technical Stack
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Codes &amp; Services Location
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Codes &amp; Services Location" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Codes &amp; Services Location
         </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Project Overview
-  </span>
-  
-
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Code%20%26%20Services%20Location/TNGA%20Plant/">
+        TNGA Plant
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Code%20%26%20Services%20Location/GD%20Plant/">
+        GD Plant
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Code Explanation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Code Explanation" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Code Explanation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Code%20Explanation/Collector/">
+        Collector Services
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Code%20Explanation/Back%20End/">
+        Back End Services
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Troubleshoot_Faq/">
+        Troubleshooting &amp; FAQ
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Requirements
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-requirements">
+    Project Requirements
   </a>
-  
-    <nav class="md-nav" aria-label="Project Requirements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functional-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functional Requirements
-    </span>
+<nav aria-label="Project Requirements" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functional-requirements">
+    Functional Requirements
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Monitoring
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-monitoring">
+    Machine State Monitoring
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-data-visualization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real-Time Data Visualization
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-data-visualization">
+    Real-Time Data Visualization
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#alarm-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring">
+    Alarm Monitoring
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#spare-part-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management">
+    Spare Part Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#special-purpose-machines-spm-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Special Purpose Machines (SPM) Management
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-purpose-machines-spm-management">
+    Special Purpose Machines (SPM) Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics">
+    Analytics
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#user-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management">
+    User Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#non-functional-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Non-Functional Requirements
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-functional-requirements">
+    Non-Functional Requirements
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nature-of-the-current-system-at-tiei" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nature of the Current System at TIEI
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nature of the Current System at TIEI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-groups-tnga-plant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Groups - TNGA Plant
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-groups-gd-plant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Groups - GD Plant
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Features
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-monitoring_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-data-visualization_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real-Time Data Visualization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alarm-monitoring_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spare-part-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#special-purpose-machines-spm-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Special Purpose Machines (SPM) Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analytics_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="user_interfaces/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    User Interface
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Technical%20Stack/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Technical Stack
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Codes & Services Location
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Codes & Services Location
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Code%20%26%20Services%20Location/TNGA%20Plant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TNGA Plant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Code%20%26%20Services%20Location/GD%20Plant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    GD Plant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Code Explanation
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Code Explanation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Code%20Explanation/Collector/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Collector Services
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Code%20Explanation/Back%20End/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Back End Services
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Troubleshoot_Faq/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Troubleshooting & FAQ
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nature-of-the-current-system-at-tiei">
+    Nature of the Current System at TIEI
+  </a>
+<nav aria-label="Nature of the Current System at TIEI" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine">
+    Machine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-parameters">
+    Machine Parameters
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-groups-tnga-plant">
+    Parameter Groups - TNGA Plant
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-groups-gd-plant">
+    Parameter Groups - GD Plant
+  </a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Requirements
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-features">
+    Project Features
   </a>
-  
-    <nav class="md-nav" aria-label="Project Requirements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functional-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functional Requirements
-    </span>
+<nav aria-label="Project Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-monitoring_1">
+    Machine State Monitoring
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Monitoring
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-data-visualization_1">
+    Real-Time Data Visualization
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-data-visualization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real-Time Data Visualization
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring_1">
+    Alarm Monitoring
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#alarm-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management_1">
+    Spare Part Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#spare-part-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-purpose-machines-spm-management_1">
+    Special Purpose Machines (SPM) Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#special-purpose-machines-spm-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Special Purpose Machines (SPM) Management
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics_1">
+    Analytics
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management_1">
+    User Management
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#user-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#non-functional-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Non-Functional Requirements
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nature-of-the-current-system-at-tiei" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nature of the Current System at TIEI
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nature of the Current System at TIEI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-groups-tnga-plant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Groups - TNGA Plant
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-groups-gd-plant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Groups - GD Plant
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Features
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-monitoring_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-data-visualization_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real-Time Data Visualization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alarm-monitoring_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spare-part-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#special-purpose-machines-spm-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Special Purpose Machines (SPM) Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analytics_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
 <h1 id="project-overview-manufacturing-data-management-for-toyota-maintenance">Project Overview: Manufacturing Data Management for Toyota Maintenance</h1>
 <h2 id="introduction"><strong>Introduction</strong></h2>
 <p>The Manufacturing Data Management (MDM) system is designed to streamline and enhance the maintenance operations for Toyota's two plants: TNGA and GD. This software solution provides comprehensive tools for monitoring, analyzing, and managing the state of various machines, spare parts, and production lines within these plants. By offering real-time data visualization, alarm monitoring, spare part management, and detailed analytics, the MDM system aims to improve operational efficiency, reduce downtime, and facilitate proactive maintenance.</p>
@@ -1314,69 +793,50 @@ And the machine parameters in the GD Plant (for the 59 general purpose CNC machi
 <li><strong>User Registration and Roles</strong>: Add new users with defined roles and permissions.</li>
 <li><strong>Secure User Management</strong>: Ensure secure handling of user data and restrict deletion of critical admin accounts.</li>
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Next: User Interface" class="md-footer__link md-footer__link--next" href="user_interfaces/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              User Interface
             </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
       For the Love of Manufacturing ❤️
     </div>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
-      
-        <script src="javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="assets/javascripts/bundle.078830c0.min.js"></script>
+<script src="javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

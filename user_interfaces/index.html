@@ -1,917 +1,434 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../Technical%20Stack/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
-    
-    
-      
-        <title>User Interface - TIEI IIOT Project Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#user-interface" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.6" name="generator"/>
+<title>User Interface - TIEI IIOT Project Documentation</title>
+<link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<meta content="#009485" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#user-interface">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="TIEI IIOT Project Documentation" class="md-header__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
-      
-  <img src="../images/cmti_logo_full_white_no_border.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="TIEI IIOT Project Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="TIEI IIOT Project Documentation">
+<img alt="logo" src="../images/cmti_logo_full_white_no_border.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             TIEI IIOT Project Documentation
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               User Interface
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-    
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-  </nav>
-  
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="TIEI IIOT Project Documentation" class="md-nav__button md-logo" aria-label="TIEI IIOT Project Documentation" data-md-component="logo">
-      
-  <img src="../images/cmti_logo_full_white_no_border.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="TIEI IIOT Project Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="TIEI IIOT Project Documentation">
+<img alt="logo" src="../images/cmti_logo_full_white_no_border.png"/>
+</a>
     TIEI IIOT Project Documentation
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Project Overview
-  </span>
-  
-
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Project Overview
       </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    User Interface
-  </span>
-  
-
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          User Interface
           <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        User Interface
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maintenance-section">
+    Maintenance Section
+  </a>
+<nav aria-label="Maintenance Section" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-page">
+    Machine State Page
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-graph">
+    Real Time Graph
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring-section">
+    Alarm Monitoring Section
+  </a>
+<nav aria-label="Alarm Monitoring Section" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-table">
+    Alarm Table
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#partio-graphs">
+    Partio Graphs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pi-chart">
+    Pi Chart
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management">
+    Spare Part Management
+  </a>
+<nav aria-label="Spare Part Management" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-machine-status">
+    All Machine Status
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-specific-spare-part-details">
+    Machine Specific Spare Part Details
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spm-machines">
+    SPM Machines
+  </a>
+<nav aria-label="SPM Machines" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-spm-machine-details">
+    All SPM Machine Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-specific-details">
+    Machine Specific Details
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics">
+    Analytics
+  </a>
+<nav aria-label="Analytics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-analytics">
+    Machine Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maintenance-analytics">
+    Maintenance Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-analytics">
+    Parameter Analytics
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management">
+    User Management
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Technical%20Stack/">
+        Technical Stack
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Codes &amp; Services Location
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Codes &amp; Services Location" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Codes &amp; Services Location
         </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    User Interface
-  </span>
-  
-
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Code%20%26%20Services%20Location/TNGA%20Plant/">
+        TNGA Plant
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Code%20%26%20Services%20Location/GD%20Plant/">
+        GD Plant
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Code Explanation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Code Explanation" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Code Explanation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Code%20Explanation/Collector/">
+        Collector Services
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Code%20Explanation/Back%20End/">
+        Back End Services
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Troubleshoot_Faq/">
+        Troubleshooting &amp; FAQ
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#maintenance-section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maintenance Section
-    </span>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maintenance-section">
+    Maintenance Section
   </a>
-  
-    <nav class="md-nav" aria-label="Maintenance Section">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-page" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Page
-    </span>
+<nav aria-label="Maintenance Section" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-state-page">
+    Machine State Page
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real Time Graph
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-time-graph">
+    Real Time Graph
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alarm-monitoring-section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring Section
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Alarm Monitoring Section">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alarm-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Table
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#partio-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Partio Graphs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pi-chart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pi Chart
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spare-part-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spare Part Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-machine-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      All Machine Status
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-specific-spare-part-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Specific Spare Part Details
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spm-machines" class="md-nav__link">
-    <span class="md-ellipsis">
-      SPM Machines
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SPM Machines">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-spm-machine-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      All SPM Machine Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-specific-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Specific Details
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Analytics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maintenance-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maintenance Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Analytics
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Technical%20Stack/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Technical Stack
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Codes & Services Location
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Codes & Services Location
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Code%20%26%20Services%20Location/TNGA%20Plant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TNGA Plant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Code%20%26%20Services%20Location/GD%20Plant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    GD Plant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Code Explanation
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Code Explanation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Code%20Explanation/Collector/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Collector Services
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Code%20Explanation/Back%20End/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Back End Services
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Troubleshoot_Faq/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Troubleshooting & FAQ
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-monitoring-section">
+    Alarm Monitoring Section
+  </a>
+<nav aria-label="Alarm Monitoring Section" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#alarm-table">
+    Alarm Table
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#partio-graphs">
+    Partio Graphs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pi-chart">
+    Pi Chart
+  </a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#maintenance-section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maintenance Section
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Maintenance Section">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-state-page" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine State Page
-    </span>
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real Time Graph
-    </span>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spare-part-management">
+    Spare Part Management
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alarm-monitoring-section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Monitoring Section
-    </span>
+<nav aria-label="Spare Part Management" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-machine-status">
+    All Machine Status
   </a>
-  
-    <nav class="md-nav" aria-label="Alarm Monitoring Section">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alarm-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alarm Table
-    </span>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-specific-spare-part-details">
+    Machine Specific Spare Part Details
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#partio-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Partio Graphs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pi-chart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pi Chart
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spare-part-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spare Part Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spare Part Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-machine-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      All Machine Status
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-specific-spare-part-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Specific Spare Part Details
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spm-machines" class="md-nav__link">
-    <span class="md-ellipsis">
-      SPM Machines
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SPM Machines">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-spm-machine-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      All SPM Machine Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-specific-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Specific Details
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analytics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Analytics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#machine-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maintenance-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maintenance Analytics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-analytics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Analytics
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Management
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spm-machines">
+    SPM Machines
+  </a>
+<nav aria-label="SPM Machines" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-spm-machine-details">
+    All SPM Machine Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-specific-details">
+    Machine Specific Details
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#analytics">
+    Analytics
+  </a>
+<nav aria-label="Analytics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#machine-analytics">
+    Machine Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maintenance-analytics">
+    Maintenance Analytics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-analytics">
+    Parameter Analytics
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-management">
+    User Management
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
 <h1 id="user-interface">User Interface</h1>
 <p>This section gives the details about the user interface for the implemented solution. It gives details about all the functionalities of available features and steps to carry out certain tasks.</p>
 <h2 id="maintenance-section">Maintenance Section</h2>
@@ -927,8 +444,8 @@
 </ul>
 <h3 id="machine-state-page">Machine State Page</h3>
 <p>The screens that show the states of different elements are shown below.</p>
-<p><a class="glightbox" href="../images/Updated/tngaHome.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Maintenance Section: Machine State Page - TNGA" src="../images/Updated/tngaHome.png" /></a>
-<a class="glightbox" href="../images/Updated/GDHome.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Maintenance Section: Machine State Page - GD" src="../images/Updated/GDHome.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/tngaHome.png"><img align="center" alt="Maintenance Section: Machine State Page - TNGA" src="../images/Updated/tngaHome.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/GDHome.png"><img align="center" alt="Maintenance Section: Machine State Page - GD" src="../images/Updated/GDHome.png"/></a></p>
 <p>This section shows the machine state of the general-purpose CNC machines. The main element on the screen is your information card for the machines (rectangular box). It has two sets of attributes:</p>
 <ul>
 <li>
@@ -984,7 +501,7 @@
 </ol>
 <h3 id="real-time-graph">Real Time Graph</h3>
 <p>The screens that show the real-time data (for static parameter) are shown below</p>
-<p><a class="glightbox" href="../images/Updated/Realtime.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Maintenance Section: Real Time Data - Static Parameter" src="../images/Updated/Realtime.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/Realtime.png"><img align="center" alt="Maintenance Section: Real Time Data - Static Parameter" src="../images/Updated/Realtime.png"/></a></p>
 <p>The different sub-sections of this maintenance section are explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1026,7 +543,7 @@
 </li>
 </ol>
 <p>The screens that shows the real time data (for dynamic parameter) is shown below</p>
-<p><a class="glightbox" href="../images/Updated/dynamic.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Maintenance Section: Real Time Data - Dynamic Parameter" src="../images/Updated/dynamic.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/dynamic.png"><img align="center" alt="Maintenance Section: Real Time Data - Dynamic Parameter" src="../images/Updated/dynamic.png"/></a></p>
 <p>The different sub sections of this maintenace section is explained below (as numbered in the image above)</p>
 <ol>
 <li><strong>Add/Edit Limits</strong> : This button is used to add (new or remove and replace existing) or append (to already existing) reference signal to the dynamic parameter.</li>
@@ -1046,7 +563,7 @@
 </ul>
 <h3 id="alarm-table">Alarm Table</h3>
 <p>The screens that shows the alarm table is shown below</p>
-<p><a class="glightbox" href="../images/Updated/alarm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Alarm Monitoring Section: Alarms Table" src="../images/Updated/alarm.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/alarm.png"><img align="center" alt="Alarm Monitoring Section: Alarms Table" src="../images/Updated/alarm.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1076,8 +593,8 @@
 </ol>
 <h3 id="partio-graphs">Partio Graphs</h3>
 <p>The screens that shows the partio graphs for the <strong>Alarm Count Vs Alarms</strong> and <strong>Alarm Timespan Vs Alarms</strong> are shown below</p>
-<p><a class="glightbox" href="../images/Updated/alarm2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Alarm Monitoring Section: Parito Graph" src="../images/Updated/alarm2.png" /></a></p>
-<p><a class="glightbox" href="../images/Updated/alarm3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Alarm Monitoring Section: Parito Graph" src="../images/Updated/alarm3.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/alarm2.png"><img align="center" alt="Alarm Monitoring Section: Parito Graph" src="../images/Updated/alarm2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/alarm3.png"><img align="center" alt="Alarm Monitoring Section: Parito Graph" src="../images/Updated/alarm3.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1092,7 +609,7 @@
 </ol>
 <h3 id="pi-chart">Pi Chart</h3>
 <p>The screens that shows the pi chart for the <strong>Alarm Timespan</strong> are shown below:</p>
-<p><a class="glightbox" href="../images/Updated/alarm4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Alarm Monitoring Section: Pi Chart" src="../images/Updated/alarm4.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/alarm4.png"><img align="center" alt="Alarm Monitoring Section: Pi Chart" src="../images/Updated/alarm4.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1117,7 +634,7 @@
 </ul>
 <h3 id="all-machine-status">All Machine Status</h3>
 <p>The screens that shows the machine details is shown below</p>
-<p><a class="glightbox" href="../images/Updated/Spareparthome.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Spare Part Management: Machine Details" src="../images/Updated/Spareparthome.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/Spareparthome.png"><img align="center" alt="Spare Part Management: Machine Details" src="../images/Updated/Spareparthome.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1132,7 +649,7 @@
 </ol>
 <h3 id="machine-specific-spare-part-details">Machine Specific Spare Part Details</h3>
 <p>The screens that shows the spare part details for a selected machine is shown below</p>
-<p><a class="glightbox" href="../images/Updated/sparelock.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Spare Part Management: Machine Spare Part Details 1" src="../images/Updated/sparelock.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/sparelock.png"><img align="center" alt="Spare Part Management: Machine Spare Part Details 1" src="../images/Updated/sparelock.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1158,7 +675,7 @@
 </li>
 </ol>
 <p>The screens that shows the spare part details for a selected machine after unlocking the table is shown below</p>
-<p><a class="glightbox" href="../images/Updated/spareunlock.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Spare Part Management: Machine Spare Part Details 1" src="../images/Updated/spareunlock.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/spareunlock.png"><img align="center" alt="Spare Part Management: Machine Spare Part Details 1" src="../images/Updated/spareunlock.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1180,11 +697,11 @@
 <h2 id="spm-machines">SPM Machines</h2>
 <p>This section is used for management of SPM machines, it has two views:</p>
 <h3 id="all-spm-machine-details">All SPM Machine Details</h3>
-<p><a class="glightbox" href="../images/Updated/spmhome2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="SPM: Machine Details" src="../images/Updated/spmhome2.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/spmhome2.png"><img align="center" alt="SPM: Machine Details" src="../images/Updated/spmhome2.png"/></a></p>
 <p>This shows information card for all available SPM machines and has a details button, Where one can view the current status of its parameters as shown in the above image. The information card is highlighted in different colors (green ,orange, red) corresponding to it's (it's parameters) state.The different sub sections of this section is explained below (as numbered in the image above):</p>
 <ol>
 <li>
-<p>**Machine Name ** : This shows the machine name.</p>
+<p><strong>Machine Name </strong> : This shows the machine name.</p>
 </li>
 <li>
 <p><strong>Parameter Name</strong> : This shows the Parameter name.</p>
@@ -1196,10 +713,10 @@
 <h3 id="machine-specific-details">Machine Specific Details</h3>
 <p>This shows the real time graph for the spm. It can display three information</p>
 <p><strong>Static Parameter</strong> - All the parameters (both static and dynamic) are combined under parameters section, the static parameters will have critical and warning limits. The sample screen is shown below, The different sub sections of this section is explained below (as numbered in the image below).</p>
-<p><a class="glightbox" href="../images/Updated/spmstatic2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="SPM: Machine Specific Details: Static" src="../images/Updated/spmstatic2.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/spmstatic2.png"><img align="center" alt="SPM: Machine Specific Details: Static" src="../images/Updated/spmstatic2.png"/></a></p>
 <ol>
 <li>
-<p>**Switch Button ** : This is the switch button between the Postion graph and the Time-Series Graph.</p>
+<p><strong>Switch Button </strong> : This is the switch button between the Postion graph and the Time-Series Graph.</p>
 </li>
 <li>
 <p><strong>Machine Name</strong> : This shows the machine name.</p>
@@ -1227,27 +744,27 @@
 </li>
 </ol>
 <p><strong>Dynamic Parameter</strong> - All the parameters (both static and dynamic) are combined under parameters section, the dynamic parameters will have button to add edit reference signal. The sample screen is shown below, The different sub sections of this section is explained below (as numbered in the image below)</p>
-<p><a class="glightbox" href="../images/Updated/spmdynamic2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="SPM: Machine Specific Details: Dynamic" src="../images/Updated/spmdynamic2.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/spmdynamic2.png"><img align="center" alt="SPM: Machine Specific Details: Dynamic" src="../images/Updated/spmdynamic2.png"/></a></p>
 <ol>
 <li><strong>Add/Edit Limits</strong> :  This button is used to add (new or remove and replace existing) or append (to already existing) reference signal to the dynamic parameter.</li>
 </ol>
 <p><strong>Position Based Query</strong> - The sample screen is shown below, The different sub sections of this section is explained below (as numbered in the image below)</p>
-<p><a class="glightbox" href="../images/Updated/spmpostition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="SPM: Machine Specific Details: Position" src="../images/Updated/spmpostition.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/spmpostition.png"><img align="center" alt="SPM: Machine Specific Details: Position" src="../images/Updated/spmpostition.png"/></a></p>
 <ol>
 <li>
-<p>**Switch Button ** : This is the switch button between the Postion graph and the Time-Series Graph.</p>
+<p><strong>Switch Button </strong> : This is the switch button between the Postion graph and the Time-Series Graph.</p>
 </li>
 <li>
 <p><strong>Machine Name</strong> : This shows the machine name.</p>
 </li>
 <li>
-<p>**Part Number Search ** : Here the user can search for the specific part number and select the same for the Graph.</p>
+<p><strong>Part Number Search </strong> : Here the user can search for the specific part number and select the same for the Graph.</p>
 </li>
 <li>
 <p><strong>Machine Parameter</strong> : This shows the parameter name, and it's condition (color coded by the box below the parameter name), there is a small check box (to the left of the parameter name) that allows the user to select the parameter that needs to be displayed.</p>
 </li>
 <li>
-<p>**Part Number Selection ** : Here the user can select the specific part number (upto 3 part numbers) and get the Graph for the same.</p>
+<p><strong>Part Number Selection </strong> : Here the user can select the specific part number (upto 3 part numbers) and get the Graph for the same.</p>
 </li>
 <li>
 <p><strong>Start Time Query Selector</strong> : This is used to select the start time of your query to get the Postion/Time-series data.</p>
@@ -1267,7 +784,7 @@
 <p>This section is used for the management and analysis of various aspects of the machines in the plant. It has three main subsections: Machine Analytics, Maintenance Analytics, and Parameter Analytics. Each subsection allows users to filter data by date and other parameters to generate relevant reports and visualizations.</p>
 <h3 id="machine-analytics">Machine Analytics</h3>
 <p>This subsection allows users to analyze the abnormalities related to specific machines over a selected time period.</p>
-<p><a class="glightbox" href="../images/Updated/machineanalytics.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Machine Analytics" src="../images/Updated/machineanalytics.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/machineanalytics.png"><img align="center" alt="Machine Analytics" src="../images/Updated/machineanalytics.png"/></a></p>
 <ol>
 <li><strong>Machine Name</strong>: This input field allows users to specify the machine they want to analyze.</li>
 <li><strong>From Date</strong>: Users can set the starting date and time for the analysis period.</li>
@@ -1277,7 +794,7 @@
 </ol>
 <h3 id="maintenance-analytics">Maintenance Analytics</h3>
 <p>This subsection provides insights into the maintenance-related abnormalities managed by different operators over a selected time period.</p>
-<p><a class="glightbox" href="../images/Updated/mantanice.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Maintenance Analytics" src="../images/Updated/mantanice.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/mantanice.png"><img align="center" alt="Maintenance Analytics" src="../images/Updated/mantanice.png"/></a></p>
 <ol>
 <li><strong>From Date</strong>: Users can set the starting date and time for the analysis period.</li>
 <li><strong>To Date</strong>: Users can set the ending date and time for the analysis period.</li>
@@ -1286,7 +803,7 @@
 </ol>
 <h3 id="parameter-analytics">Parameter Analytics</h3>
 <p>This subsection allows users to analyze abnormalities related to specific machine parameters over a selected time period.</p>
-<p><a class="glightbox" href="../images/Updated/Paramteranalytics.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="Parameter Analytics" src="../images/Updated/Paramteranalytics.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/Paramteranalytics.png"><img align="center" alt="Parameter Analytics" src="../images/Updated/Paramteranalytics.png"/></a></p>
 <ol>
 <li><strong>Parameter Group</strong>: This input field allows users to specify the parameter group they want to analyze.</li>
 <li><strong>From Date</strong>: Users can set the starting date and time for the analysis period.</li>
@@ -1298,7 +815,7 @@
 <h2 id="user-management">User Management</h2>
 <p>This section is used for user management:</p>
 <p>The screens that shows the user details is shown below</p>
-<p><a class="glightbox" href="../images/Updated/profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="User Management" src="../images/Updated/profile.png" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Updated/profile.png"><img align="center" alt="User Management" src="../images/Updated/profile.png"/></a></p>
 <p>The different sub sections of this section is explained below (as numbered in the image above)</p>
 <ol>
 <li>
@@ -1309,69 +826,63 @@
 </div>
 </li>
 </ol>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Project Overview" class="md-footer__link md-footer__link--prev" href=".." rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Project Overview
             </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
+</div>
+</a>
+<a aria-label="Next: Technical Stack" class="md-footer__link md-footer__link--next" href="../Technical%20Stack/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Technical Stack
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
       For the Love of Manufacturing ❤️
     </div>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
-      
-        <script src="../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+<script src="../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
